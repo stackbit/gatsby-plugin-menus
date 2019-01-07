@@ -1,0 +1,6 @@
+{
+    "name": "@stackbit/gatsby-plugin-menus",
+    "description": "Gatsby menus plugin",
+    "version": "0.0.1",
+    "keywords": ["gatsby", "gatsby-plugin", "menus", "gatsby-plugin-menus", "gatsby-menus"]
+}
