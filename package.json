@@ -1,6 +1,25 @@
 {
-    "name": "@stackbit/gatsby-plugin-menus",
-    "description": "Gatsby menus plugin",
-    "version": "0.0.1",
-    "keywords": ["gatsby", "gatsby-plugin", "menus", "gatsby-plugin-menus", "gatsby-menus"]
+  "name": "@stackbit/gatsby-plugin-menus",
+  "description": "Gatsby menus plugin",
+  "version": "0.0.1",
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "menus",
+    "gatsby-plugin-menus",
+    "gatsby-menus"
+  ],
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stackbithq/gatsby-plugin-menus.git"
+  },
+  "author": "Stackbit",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stackbithq/gatsby-plugin-menus/issues"
+  },
+  "homepage": "https://github.com/stackbithq/gatsby-plugin-menus#readme"
 }
