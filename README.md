@@ -4,8 +4,6 @@ A simple-to-use menu plugin for [Gatsby](http://gatsbyjs.org) that allows for in
 
 Comes with built-in support for extracting menus defined in Markdown, but can also be extended to load menus from any source.
 
-See [demo](#demo) for usage example.
-
 ## Install
 
 `npm install --save gatsby-plugin-menus`
@@ -228,8 +226,3 @@ And the menus will be available in the page's context:
 ```javascript
 this.props.pageContext.menus
 ```
-
-
-## Demo 
-
-For a complete usage example, see the [gatsby-menus-starter](https://github.com/stackbithq/gatsby-menus-starter) project.
