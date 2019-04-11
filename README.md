@@ -6,7 +6,7 @@ Comes with built-in support for extracting menus defined in Markdown, but can al
 
 ## Install
 
-`npm install --save gatsby-plugin-menus`
+`npm install --save @stackbit/gatsby-plugin-menus`
 
 ## How to use
 
