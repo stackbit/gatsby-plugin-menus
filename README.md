@@ -16,7 +16,7 @@ Comes with built-in support for extracting menus defined in Markdown, but can al
 // gatsby-config.js
 plugins: [
   {
-    resolve: 'gatsby-plugins-menus',
+    resolve: '@stackbit/gatsby-plugins-menus',
     options: {
       // static definition of menu items (optional)
       menus: {
