@@ -145,7 +145,7 @@ It is possible to override the default behavior of extracting menu items from Ma
 // gatsby-config.js
 plugins: [
   {
-    resolve: 'gatsby-plugins-menus',
+    resolve: '@stackbit/gatsby-plugins-menus',
     options: {
       ...
       // custom menu loading function (optional)
