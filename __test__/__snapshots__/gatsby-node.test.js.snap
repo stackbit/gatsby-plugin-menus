@@ -1,0 +1,955 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`dynamic items correctly creates nodes 1`] = `
+Array [
+  Array [
+    Object {
+      "id": "menu-submenu",
+      "identifier": "submenu",
+      "internal": Object {
+        "contentDigest": "contentDigest",
+        "type": "Menu",
+      },
+      "menu___NODE": "menu-main",
+      "title": "Submenu",
+      "url": "#",
+      "weight": 3,
+    },
+  ],
+  Array [
+    Object {
+      "id": "menu-foo",
+      "identifier": "foo",
+      "internal": Object {
+        "contentDigest": "contentDigest",
+        "type": "Menu",
+      },
+      "menu___NODE": "menu-main",
+      "title": "Foo",
+      "url": "#",
+      "weight": undefined,
+    },
+  ],
+  Array [
+    Object {
+      "id": "menu-bar",
+      "identifier": "bar",
+      "internal": Object {
+        "contentDigest": "contentDigest",
+        "type": "Menu",
+      },
+      "menu___NODE": "menu-main",
+      "title": "Bar",
+      "url": "#",
+      "weight": undefined,
+    },
+  ],
+  Array [
+    Object {
+      "id": "menu-main",
+      "identifier": "main",
+      "internal": Object {
+        "contentDigest": "contentDigest",
+        "type": "Menu",
+      },
+      "items___NODE": Array [
+        "menu-submenu",
+        "menu-foo",
+        "menu-bar",
+      ],
+      "menu___NODE": undefined,
+    },
+  ],
+  Array [
+    Object {
+      "id": "menu-submenu-0",
+      "identifier": "submenu-0",
+      "internal": Object {
+        "contentDigest": "contentDigest",
+        "type": "Menu",
+      },
+      "menu___NODE": "menu-submenu",
+      "title": "Submenu Item 1",
+      "url": "#",
+      "weight": undefined,
+    },
+  ],
+  Array [
+    Object {
+      "id": "menu-submenu",
+      "identifier": "submenu",
+      "internal": Object {
+        "contentDigest": "contentDigest",
+        "type": "Menu",
+      },
+      "items___NODE": Array [
+        "menu-submenu-0",
+      ],
+      "menu___NODE": undefined,
+      "title": "Submenu",
+      "url": "#",
+      "weight": 3,
+    },
+  ],
+  Array [
+    Object {
+      "id": "uuid-from-gatsby",
+      "internal": Object {
+        "contentDigest": "contentDigest",
+        "type": "Menus",
+      },
+      "main___NODE": Array [
+        "menu-submenu",
+        "menu-foo",
+        "menu-bar",
+      ],
+      "submenu___NODE": Array [
+        "menu-submenu-0",
+      ],
+    },
+  ],
+]
+`;
+
+exports[`dynamic menu loader correctly extracts menus from remark nodes 1`] = `
+Object {
+  "footer": Array [
+    Object {
+      "data": Object {
+        "page___NODE": "fac6dcf6-72a1-56f4-991a-a5d2d354f599",
+      },
+      "identifier": "footer-page-2",
+      "title": "Boom",
+      "url": "/page-2/",
+      "weight": 1,
+    },
+    Object {
+      "data": Object {
+        "page___NODE": "e63376ed-7d76-5566-a5e4-98cb64b5479f",
+      },
+      "identifier": "footer-page-1",
+      "title": "Page 1 Title",
+      "url": "/page-1/",
+      "weight": 2,
+    },
+  ],
+  "main": Array [
+    Object {
+      "data": Object {
+        "page___NODE": "291a199c-8e35-5582-b55a-841132496ee3",
+      },
+      "identifier": "main-index",
+      "title": "Home",
+      "url": "/",
+      "weight": 1,
+    },
+    Object {
+      "data": Object {
+        "page___NODE": "e63376ed-7d76-5566-a5e4-98cb64b5479f",
+      },
+      "identifier": "main-page-1",
+      "title": "Page 1",
+      "url": "/page-1/",
+      "weight": 2,
+    },
+    Object {
+      "data": Object {
+        "page___NODE": "fac6dcf6-72a1-56f4-991a-a5d2d354f599",
+      },
+      "identifier": "main-page-2",
+      "title": "Page 2",
+      "url": "/page-2/",
+      "weight": 4,
+    },
+  ],
+  "submenu": Array [
+    Object {
+      "data": Object {
+        "page___NODE": "291a199c-8e35-5582-b55a-841132496ee3",
+      },
+      "identifier": "submenu-index",
+      "title": "Submenu Item 2",
+      "url": "/",
+      "weight": undefined,
+    },
+  ],
+}
+`;
+
+exports[`menu merging correctly creates nodes 1`] = `
+Array [
+  Array [
+    Object {
+      "id": "menu-home",
+      "identifier": "home",
+      "internal": Object {
+        "contentDigest": "contentDigest",
+        "type": "Menu",
+      },
+      "menu___NODE": "menu-main",
+      "title": "Home",
+      "url": "/",
+      "weight": 1,
+    },
+  ],
+  Array [
+    Object {
+      "id": "menu-page1",
+      "identifier": "page1",
+      "internal": Object {
+        "contentDigest": "contentDigest",
+        "type": "Menu",
+      },
+      "menu___NODE": "menu-main",
+      "title": "Page 1",
+      "url": "page-1",
+      "weight": 2,
+    },
+  ],
+  Array [
+    Object {
+      "id": "menu-submenu",
+      "identifier": "submenu",
+      "internal": Object {
+        "contentDigest": "contentDigest",
+        "type": "Menu",
+      },
+      "menu___NODE": "menu-main",
+      "title": "Submenu",
+      "url": "#",
+      "weight": 3,
+    },
+  ],
+  Array [
+    Object {
+      "id": "menu-page2",
+      "identifier": "page2",
+      "internal": Object {
+        "contentDigest": "contentDigest",
+        "type": "Menu",
+      },
+      "menu___NODE": "menu-main",
+      "title": "Page 2",
+      "url": "page-2",
+      "weight": 4,
+    },
+  ],
+  Array [
+    Object {
+      "id": "menu-foo",
+      "identifier": "foo",
+      "internal": Object {
+        "contentDigest": "contentDigest",
+        "type": "Menu",
+      },
+      "menu___NODE": "menu-main",
+      "title": "Foo",
+      "url": "#",
+      "weight": undefined,
+    },
+  ],
+  Array [
+    Object {
+      "id": "menu-bar",
+      "identifier": "bar",
+      "internal": Object {
+        "contentDigest": "contentDigest",
+        "type": "Menu",
+      },
+      "menu___NODE": "menu-main",
+      "title": "Bar",
+      "url": "#",
+      "weight": undefined,
+    },
+  ],
+  Array [
+    Object {
+      "id": "menu-main",
+      "identifier": "main",
+      "internal": Object {
+        "contentDigest": "contentDigest",
+        "type": "Menu",
+      },
+      "items___NODE": Array [
+        "menu-home",
+        "menu-page1",
+        "menu-submenu",
+        "menu-page2",
+        "menu-foo",
+        "menu-bar",
+      ],
+      "menu___NODE": undefined,
+    },
+  ],
+  Array [
+    Object {
+      "id": "menu-submenu-0",
+      "identifier": "submenu-0",
+      "internal": Object {
+        "contentDigest": "contentDigest",
+        "type": "Menu",
+      },
+      "menu___NODE": "menu-submenu",
+      "title": "Submenu Item 1",
+      "url": "#",
+      "weight": undefined,
+    },
+  ],
+  Array [
+    Object {
+      "id": "menu-sub2",
+      "identifier": "sub2",
+      "internal": Object {
+        "contentDigest": "contentDigest",
+        "type": "Menu",
+      },
+      "menu___NODE": "menu-submenu",
+      "title": "Submenu Item 2",
+      "url": "/",
+      "weight": undefined,
+    },
+  ],
+  Array [
+    Object {
+      "id": "menu-submenu",
+      "identifier": "submenu",
+      "internal": Object {
+        "contentDigest": "contentDigest",
+        "type": "Menu",
+      },
+      "items___NODE": Array [
+        "menu-submenu-0",
+        "menu-sub2",
+      ],
+      "menu___NODE": undefined,
+      "title": "Submenu",
+      "url": "#",
+      "weight": 3,
+    },
+  ],
+  Array [
+    Object {
+      "id": "menu-boom",
+      "identifier": "boom",
+      "internal": Object {
+        "contentDigest": "contentDigest",
+        "type": "Menu",
+      },
+      "menu___NODE": "menu-footer",
+      "title": "Boom",
+      "url": "page-2",
+      "weight": 1,
+    },
+  ],
+  Array [
+    Object {
+      "id": "menu-footer-page1",
+      "identifier": "footer-page1",
+      "internal": Object {
+        "contentDigest": "contentDigest",
+        "type": "Menu",
+      },
+      "menu___NODE": "menu-footer",
+      "title": "Page 1 Title",
+      "url": "page-1",
+      "weight": 2,
+    },
+  ],
+  Array [
+    Object {
+      "id": "menu-footer",
+      "identifier": "footer",
+      "internal": Object {
+        "contentDigest": "contentDigest",
+        "type": "Menu",
+      },
+      "items___NODE": Array [
+        "menu-boom",
+        "menu-footer-page1",
+      ],
+      "menu___NODE": undefined,
+    },
+  ],
+  Array [
+    Object {
+      "footer___NODE": Array [
+        "menu-boom",
+        "menu-footer-page1",
+      ],
+      "id": "uuid-from-gatsby",
+      "internal": Object {
+        "contentDigest": "contentDigest",
+        "type": "Menus",
+      },
+      "main___NODE": Array [
+        "menu-home",
+        "menu-page1",
+        "menu-submenu",
+        "menu-page2",
+        "menu-foo",
+        "menu-bar",
+      ],
+      "submenu___NODE": Array [
+        "menu-submenu-0",
+        "menu-sub2",
+      ],
+    },
+  ],
+]
+`;
+
+exports[`menu merging correctly handles end-to-end scenario 1`] = `
+Array [
+  Array [
+    Object {
+      "id": "menu-home",
+      "identifier": "home",
+      "internal": Object {
+        "contentDigest": "contentDigest",
+        "type": "Menu",
+      },
+      "menu___NODE": "menu-main",
+      "title": "Home",
+      "url": "/",
+      "weight": 1,
+    },
+  ],
+  Array [
+    Object {
+      "id": "menu-page1",
+      "identifier": "page1",
+      "internal": Object {
+        "contentDigest": "contentDigest",
+        "type": "Menu",
+      },
+      "menu___NODE": "menu-main",
+      "title": "Page 1",
+      "url": "page-1",
+      "weight": 2,
+    },
+  ],
+  Array [
+    Object {
+      "id": "menu-submenu",
+      "identifier": "submenu",
+      "internal": Object {
+        "contentDigest": "contentDigest",
+        "type": "Menu",
+      },
+      "menu___NODE": "menu-main",
+      "title": "Submenu",
+      "url": "#",
+      "weight": 3,
+    },
+  ],
+  Array [
+    Object {
+      "id": "menu-page2",
+      "identifier": "page2",
+      "internal": Object {
+        "contentDigest": "contentDigest",
+        "type": "Menu",
+      },
+      "menu___NODE": "menu-main",
+      "title": "Page 2",
+      "url": "page-2",
+      "weight": 4,
+    },
+  ],
+  Array [
+    Object {
+      "id": "menu-foo",
+      "identifier": "foo",
+      "internal": Object {
+        "contentDigest": "contentDigest",
+        "type": "Menu",
+      },
+      "menu___NODE": "menu-main",
+      "title": "Foo",
+      "url": "#",
+      "weight": undefined,
+    },
+  ],
+  Array [
+    Object {
+      "id": "menu-bar",
+      "identifier": "bar",
+      "internal": Object {
+        "contentDigest": "contentDigest",
+        "type": "Menu",
+      },
+      "menu___NODE": "menu-main",
+      "title": "Bar",
+      "url": "#",
+      "weight": undefined,
+    },
+  ],
+  Array [
+    Object {
+      "id": "menu-main",
+      "identifier": "main",
+      "internal": Object {
+        "contentDigest": "contentDigest",
+        "type": "Menu",
+      },
+      "items___NODE": Array [
+        "menu-home",
+        "menu-page1",
+        "menu-submenu",
+        "menu-page2",
+        "menu-foo",
+        "menu-bar",
+      ],
+      "menu___NODE": undefined,
+    },
+  ],
+  Array [
+    Object {
+      "id": "menu-submenu-0",
+      "identifier": "submenu-0",
+      "internal": Object {
+        "contentDigest": "contentDigest",
+        "type": "Menu",
+      },
+      "menu___NODE": "menu-submenu",
+      "title": "Submenu Item 1",
+      "url": "#",
+      "weight": undefined,
+    },
+  ],
+  Array [
+    Object {
+      "id": "menu-sub2",
+      "identifier": "sub2",
+      "internal": Object {
+        "contentDigest": "contentDigest",
+        "type": "Menu",
+      },
+      "menu___NODE": "menu-submenu",
+      "title": "Submenu Item 2",
+      "url": "/",
+      "weight": undefined,
+    },
+  ],
+  Array [
+    Object {
+      "id": "menu-submenu",
+      "identifier": "submenu",
+      "internal": Object {
+        "contentDigest": "contentDigest",
+        "type": "Menu",
+      },
+      "items___NODE": Array [
+        "menu-submenu-0",
+        "menu-sub2",
+      ],
+      "menu___NODE": undefined,
+      "title": "Submenu",
+      "url": "#",
+      "weight": 3,
+    },
+  ],
+  Array [
+    Object {
+      "id": "menu-boom",
+      "identifier": "boom",
+      "internal": Object {
+        "contentDigest": "contentDigest",
+        "type": "Menu",
+      },
+      "menu___NODE": "menu-footer",
+      "title": "Boom",
+      "url": "page-2",
+      "weight": 1,
+    },
+  ],
+  Array [
+    Object {
+      "id": "menu-footer-page1",
+      "identifier": "footer-page1",
+      "internal": Object {
+        "contentDigest": "contentDigest",
+        "type": "Menu",
+      },
+      "menu___NODE": "menu-footer",
+      "title": "Page 1 Title",
+      "url": "page-1",
+      "weight": 2,
+    },
+  ],
+  Array [
+    Object {
+      "id": "menu-footer",
+      "identifier": "footer",
+      "internal": Object {
+        "contentDigest": "contentDigest",
+        "type": "Menu",
+      },
+      "items___NODE": Array [
+        "menu-boom",
+        "menu-footer-page1",
+      ],
+      "menu___NODE": undefined,
+    },
+  ],
+  Array [
+    Object {
+      "footer___NODE": Array [
+        "menu-boom",
+        "menu-footer-page1",
+      ],
+      "id": "uuid-from-gatsby",
+      "internal": Object {
+        "contentDigest": "contentDigest",
+        "type": "Menus",
+      },
+      "main___NODE": Array [
+        "menu-home",
+        "menu-page1",
+        "menu-submenu",
+        "menu-page2",
+        "menu-foo",
+        "menu-bar",
+      ],
+      "submenu___NODE": Array [
+        "menu-submenu-0",
+        "menu-sub2",
+      ],
+    },
+  ],
+  Array [
+    Object {
+      "id": "menu-main-index",
+      "identifier": "main-index",
+      "internal": Object {
+        "contentDigest": "contentDigest",
+        "type": "Menu",
+      },
+      "menu___NODE": "menu-main",
+      "page___NODE": "291a199c-8e35-5582-b55a-841132496ee3",
+      "title": "Home",
+      "url": "/",
+      "weight": 1,
+    },
+  ],
+  Array [
+    Object {
+      "id": "menu-main-page-1",
+      "identifier": "main-page-1",
+      "internal": Object {
+        "contentDigest": "contentDigest",
+        "type": "Menu",
+      },
+      "menu___NODE": "menu-main",
+      "page___NODE": "e63376ed-7d76-5566-a5e4-98cb64b5479f",
+      "title": "Page 1",
+      "url": "/page-1/",
+      "weight": 2,
+    },
+  ],
+  Array [
+    Object {
+      "id": "menu-submenu",
+      "identifier": "submenu",
+      "internal": Object {
+        "contentDigest": "contentDigest",
+        "type": "Menu",
+      },
+      "menu___NODE": "menu-main",
+      "title": "Submenu",
+      "url": "#",
+      "weight": 3,
+    },
+  ],
+  Array [
+    Object {
+      "id": "menu-main-page-2",
+      "identifier": "main-page-2",
+      "internal": Object {
+        "contentDigest": "contentDigest",
+        "type": "Menu",
+      },
+      "menu___NODE": "menu-main",
+      "page___NODE": "fac6dcf6-72a1-56f4-991a-a5d2d354f599",
+      "title": "Page 2",
+      "url": "/page-2/",
+      "weight": 4,
+    },
+  ],
+  Array [
+    Object {
+      "id": "menu-foo",
+      "identifier": "foo",
+      "internal": Object {
+        "contentDigest": "contentDigest",
+        "type": "Menu",
+      },
+      "menu___NODE": "menu-main",
+      "title": "Foo",
+      "url": "#",
+      "weight": undefined,
+    },
+  ],
+  Array [
+    Object {
+      "id": "menu-bar",
+      "identifier": "bar",
+      "internal": Object {
+        "contentDigest": "contentDigest",
+        "type": "Menu",
+      },
+      "menu___NODE": "menu-main",
+      "title": "Bar",
+      "url": "#",
+      "weight": undefined,
+    },
+  ],
+  Array [
+    Object {
+      "id": "menu-main",
+      "identifier": "main",
+      "internal": Object {
+        "contentDigest": "contentDigest",
+        "type": "Menu",
+      },
+      "items___NODE": Array [
+        "menu-main-index",
+        "menu-main-page-1",
+        "menu-submenu",
+        "menu-main-page-2",
+        "menu-foo",
+        "menu-bar",
+      ],
+      "menu___NODE": undefined,
+    },
+  ],
+  Array [
+    Object {
+      "id": "menu-submenu-0",
+      "identifier": "submenu-0",
+      "internal": Object {
+        "contentDigest": "contentDigest",
+        "type": "Menu",
+      },
+      "menu___NODE": "menu-submenu",
+      "title": "Submenu Item 1",
+      "url": "#",
+      "weight": undefined,
+    },
+  ],
+  Array [
+    Object {
+      "id": "menu-submenu-index",
+      "identifier": "submenu-index",
+      "internal": Object {
+        "contentDigest": "contentDigest",
+        "type": "Menu",
+      },
+      "menu___NODE": "menu-submenu",
+      "page___NODE": "291a199c-8e35-5582-b55a-841132496ee3",
+      "title": "Submenu Item 2",
+      "url": "/",
+      "weight": undefined,
+    },
+  ],
+  Array [
+    Object {
+      "id": "menu-submenu",
+      "identifier": "submenu",
+      "internal": Object {
+        "contentDigest": "contentDigest",
+        "type": "Menu",
+      },
+      "items___NODE": Array [
+        "menu-submenu-0",
+        "menu-submenu-index",
+      ],
+      "menu___NODE": undefined,
+      "title": "Submenu",
+      "url": "#",
+      "weight": 3,
+    },
+  ],
+  Array [
+    Object {
+      "id": "menu-footer-page-2",
+      "identifier": "footer-page-2",
+      "internal": Object {
+        "contentDigest": "contentDigest",
+        "type": "Menu",
+      },
+      "menu___NODE": "menu-footer",
+      "page___NODE": "fac6dcf6-72a1-56f4-991a-a5d2d354f599",
+      "title": "Boom",
+      "url": "/page-2/",
+      "weight": 1,
+    },
+  ],
+  Array [
+    Object {
+      "id": "menu-footer-page-1",
+      "identifier": "footer-page-1",
+      "internal": Object {
+        "contentDigest": "contentDigest",
+        "type": "Menu",
+      },
+      "menu___NODE": "menu-footer",
+      "page___NODE": "e63376ed-7d76-5566-a5e4-98cb64b5479f",
+      "title": "Page 1 Title",
+      "url": "/page-1/",
+      "weight": 2,
+    },
+  ],
+  Array [
+    Object {
+      "id": "menu-footer",
+      "identifier": "footer",
+      "internal": Object {
+        "contentDigest": "contentDigest",
+        "type": "Menu",
+      },
+      "items___NODE": Array [
+        "menu-footer-page-2",
+        "menu-footer-page-1",
+      ],
+      "menu___NODE": undefined,
+    },
+  ],
+  Array [
+    Object {
+      "footer___NODE": Array [
+        "menu-footer-page-2",
+        "menu-footer-page-1",
+      ],
+      "id": "uuid-from-gatsby",
+      "internal": Object {
+        "contentDigest": "contentDigest",
+        "type": "Menus",
+      },
+      "main___NODE": Array [
+        "menu-main-index",
+        "menu-main-page-1",
+        "menu-submenu",
+        "menu-main-page-2",
+        "menu-foo",
+        "menu-bar",
+      ],
+      "submenu___NODE": Array [
+        "menu-submenu-0",
+        "menu-submenu-index",
+      ],
+    },
+  ],
+]
+`;
+
+exports[`static items correctly creates nodes 1`] = `
+Array [
+  Array [
+    Object {
+      "id": "menu-submenu",
+      "identifier": "submenu",
+      "internal": Object {
+        "contentDigest": "contentDigest",
+        "type": "Menu",
+      },
+      "menu___NODE": "menu-main",
+      "title": "Submenu",
+      "url": "#",
+      "weight": 3,
+    },
+  ],
+  Array [
+    Object {
+      "id": "menu-foo",
+      "identifier": "foo",
+      "internal": Object {
+        "contentDigest": "contentDigest",
+        "type": "Menu",
+      },
+      "menu___NODE": "menu-main",
+      "title": "Foo",
+      "url": "#",
+      "weight": undefined,
+    },
+  ],
+  Array [
+    Object {
+      "id": "menu-bar",
+      "identifier": "bar",
+      "internal": Object {
+        "contentDigest": "contentDigest",
+        "type": "Menu",
+      },
+      "menu___NODE": "menu-main",
+      "title": "Bar",
+      "url": "#",
+      "weight": undefined,
+    },
+  ],
+  Array [
+    Object {
+      "id": "menu-main",
+      "identifier": "main",
+      "internal": Object {
+        "contentDigest": "contentDigest",
+        "type": "Menu",
+      },
+      "items___NODE": Array [
+        "menu-submenu",
+        "menu-foo",
+        "menu-bar",
+      ],
+      "menu___NODE": undefined,
+    },
+  ],
+  Array [
+    Object {
+      "id": "menu-submenu-0",
+      "identifier": "submenu-0",
+      "internal": Object {
+        "contentDigest": "contentDigest",
+        "type": "Menu",
+      },
+      "menu___NODE": "menu-submenu",
+      "title": "Submenu Item 1",
+      "url": "#",
+      "weight": undefined,
+    },
+  ],
+  Array [
+    Object {
+      "id": "menu-submenu",
+      "identifier": "submenu",
+      "internal": Object {
+        "contentDigest": "contentDigest",
+        "type": "Menu",
+      },
+      "items___NODE": Array [
+        "menu-submenu-0",
+      ],
+      "menu___NODE": undefined,
+      "title": "Submenu",
+      "url": "#",
+      "weight": 3,
+    },
+  ],
+  Array [
+    Object {
+      "id": "uuid-from-gatsby",
+      "internal": Object {
+        "contentDigest": "contentDigest",
+        "type": "Menus",
+      },
+      "main___NODE": Array [
+        "menu-submenu",
+        "menu-foo",
+        "menu-bar",
+      ],
+      "submenu___NODE": Array [
+        "menu-submenu-0",
+      ],
+    },
+  ],
+]
+`;

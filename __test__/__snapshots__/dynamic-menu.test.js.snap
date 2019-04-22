@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`dynamic menu loader correctly extracts menus from remark nodes 1`] = `
+Object {
+  "footer": Array [
+    Object {
+      "data": Object {
+        "page___NODE": "fac6dcf6-72a1-56f4-991a-a5d2d354f599",
+      },
+      "identifier": "footer-page-2",
+      "title": "Boom",
+      "url": "/page-2/",
+      "weight": 1,
+    },
+    Object {
+      "data": Object {
+        "page___NODE": "e63376ed-7d76-5566-a5e4-98cb64b5479f",
+      },
+      "identifier": "footer-page-1",
+      "title": "Page 1 Title",
+      "url": "/page-1/",
+      "weight": 2,
+    },
+  ],
+  "main": Array [
+    Object {
+      "data": Object {
+        "page___NODE": "291a199c-8e35-5582-b55a-841132496ee3",
+      },
+      "identifier": "main-index",
+      "title": "Home",
+      "url": "/",
+      "weight": 1,
+    },
+    Object {
+      "data": Object {
+        "page___NODE": "e63376ed-7d76-5566-a5e4-98cb64b5479f",
+      },
+      "identifier": "main-page-1",
+      "title": "Page 1",
+      "url": "/page-1/",
+      "weight": 2,
+    },
+    Object {
+      "data": Object {
+        "page___NODE": "fac6dcf6-72a1-56f4-991a-a5d2d354f599",
+      },
+      "identifier": "main-page-2",
+      "title": "Page 2",
+      "url": "/page-2/",
+      "weight": 4,
+    },
+  ],
+  "submenu": Array [
+    Object {
+      "data": Object {
+        "page___NODE": "291a199c-8e35-5582-b55a-841132496ee3",
+      },
+      "identifier": "submenu-index",
+      "title": "Submenu Item 2",
+      "url": "/",
+      "weight": undefined,
+    },
+  ],
+}
+`;
