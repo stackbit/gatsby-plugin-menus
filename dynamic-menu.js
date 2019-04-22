@@ -1,5 +1,6 @@
 
 const _ = require('lodash')
+const path = require('path')
 
 const normalizeMenus = sourceMenus => {
     let menus = []
@@ -75,9 +76,14 @@ exports.loadDynamicMenusFromNodes = (sourceNodeType, sourceDataPath, sourceUrlPa
                 if (!menus.hasOwnProperty(menu.menuId)) {
                     menus[menu.menuId] = []
                 }
+
+                const pageRelativeDir = _.isEmpty(page.relativeDirectory) 
+                    ? ''
+                    : page.relativeDirectory.replace(path.sep, '-') + '-'
+                const pageId = `${pageRelativeDir}${page.name || page.id}`
                 
                 const menuResult = {
-                    identifier: menu[`data`][`identifier`] || `${menu.menuId}-${page.name || page.id}`,
+                    identifier: menu[`data`][`identifier`] || `${menu.menuId}-${pageId}`,
                     title: menu[`data`][`title`] || _.get(node, getPath(sourceDataPath, `title`)) || page.name,
                     url: menu[`data`][`url`] || _.get(node, sourceUrlPath),
                     weight: menu[`data`][`weight`],
