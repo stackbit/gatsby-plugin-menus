@@ -113,9 +113,12 @@ const connectNodes = (childrenByMenuIdentifier, menuNodeByMenuIdentifier, plugin
 
 const createMenusObject = (childrenByMenuIdentifier) => {
     const resolveChildren = (children) => {
-        return children.map(child => Object.assign(child, {
-            'items': resolveChildren(childrenByMenuIdentifier.get(child.identifier) || [])
-        }));
+        return children.map(child => Object.assign(
+            _.omit(child, ['items___NODE']), 
+            {
+                'items': resolveChildren(childrenByMenuIdentifier.get(child.identifier) || [])
+            }
+        ));
     };
     const menus = {};
     childrenByMenuIdentifier.forEach((children, menuId) => {
