@@ -1,7 +1,7 @@
 {
   "name": "@stackbit/gatsby-plugin-menus",
   "description": "Gatsby menus plugin",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "keywords": [
     "gatsby",
     "gatsby-plugin",
@@ -34,7 +34,7 @@
   "devDependencies": {
     "babel-jest": "^24.7.1",
     "babel-preset-gatsby": "^0.1.11",
-    "gatsby": "^2.3.25",
+    "gatsby": "^2.5.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^24.7.1",
     "react-test-renderer": "^16.8.6"
