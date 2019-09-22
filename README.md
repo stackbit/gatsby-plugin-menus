@@ -29,7 +29,6 @@ plugins: [
               weight: 1
             }
           ]
-        ]
       },
       // Gatsby node types from which we extract menus (optional, see "Advanced usage")
       sourceNodeType: 'MarkdownRemark', 
